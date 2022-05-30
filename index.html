@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script src="form.js" defer></script>
+
+</head>
+<body>
+  
+  <div class="main">
+    <div class="left-container">
+      <div class="black-transparent">
+        <img src="assets/odin-logo.png" width="70px" height="90px">
+        <p>ODIN</P>
+      </div>
+     <p>Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com/photos/25xggax4bSA">Unsplash</a></p>
+    </div>
+    
+    <div class="right-container">
+      <div class="header">
+        <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.</p>
+        <p>Sign up <em>now</em> to get started.</p>
+        <p>You <em>know</em> you want to.</p>
+      </div>
+      <div class="form-container">
+        <p> Let's do this!</p>
+        
+        <form id="myForm" class="form-section" action="">
+          <div class="form-left">
+            <label for="fname">FIRST NAME</label>
+            <input type="text" id="fname" name="fname" pattern="[A-Za-z]{3,}" required><br>
+            
+            <label for="email">EMAIL</label>
+            <input type="email" id="email" name="email" required><br>
+            
+            <label for="password">PASSWORD</label>
+            <input type="password" id="password" name="password"  minlength="6" required>
+            <span id="reminder"></span>
+          </div>
+          
+          <div class="form-right">
+            <label for="lname">LAST NAME</label>
+            <input type="text" id="lname" name="lname" pattern="[A-Za-z]{3,}" required><br>
+            
+            <label for="phone">PHONE NUMBER</label>
+            <input type="tel" id="phone" name="phone" required><br>
+            
+            <label for="confirmPassword">CONFIRM PASSWORD</label>
+            <input type="password" id="confirmPassword" name="confirmPassword"  minlength="6" required><br>
+          </div>
+        </form>
+      </div>
+      
+      <div class="footer">
+        <button type="submit" id="submit" form="myForm">Create Account</button>
+        <p>Already have an account?<a> Log in</a></p>
+      </div>
+    </div>
+    
+  </div>
+  
+  
+</body>
+</html>
